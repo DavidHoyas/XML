@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hola Mundo</string>
+    <string name="ingresa_nombre">Escribe tu nombre</string>
+    <string name="btn_saludar">Saludar</string>
+    <string name="saludo_generico">¡Hola, Android!</string>
+    <string name="saludo_personal">¡Hola, %1$s!</string>
+</resources>
