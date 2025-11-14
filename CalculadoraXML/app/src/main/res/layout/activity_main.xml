@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:background="#DDDDDD"
+        android:gravity="end|center_vertical"
+        android:padding="16dp"
+        android:text="0"
+        android:textColor="#000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="347dp"
+        android:layout_height="433dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="38dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResult">
+
+        <Button
+            android:id="@+id/btnDel"
+            style="@style/CalcButton"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="⌫"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn7"
+            app:layout_constraintEnd_toStartOf="@+id/btnAc"
+            app:layout_constraintTop_toBottomOf="@+id/txtResult" />
+
+        <Button
+            android:id="@+id/btnAc"
+            style="@style/CalcButton"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="AC"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn8"
+            app:layout_constraintEnd_toStartOf="@+id/btn100"
+            app:layout_constraintTop_toBottomOf="@+id/txtResult" />
+
+        <Button
+            android:id="@+id/btn100"
+            style="@style/CalcButton"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="%"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn9"
+            app:layout_constraintEnd_toStartOf="@+id/btnDiv"
+            app:layout_constraintTop_toBottomOf="@+id/txtResult" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            style="@style/CalcButton"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_marginBottom="4dp"
+            android:text="/"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnMul"
+            app:layout_constraintTop_toBottomOf="@+id/txtResult"
+            tools:layout_editor_absoluteX="285dp" />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/Button"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="7"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnDel"
+            tools:layout_editor_absoluteX="45dp" />
+
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/Button"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="8"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnAc"
+            tools:layout_editor_absoluteX="125dp" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/Button"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="9"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn100"
+            tools:layout_editor_absoluteX="205dp" />
+
+        <Button
+            android:id="@+id/btnMul"
+            style="@style/CalcButton"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="X"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnDiv"
+            tools:layout_editor_absoluteX="285dp" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/Button"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="4"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn7"
+            tools:layout_editor_absoluteX="45dp" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/Button"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="5"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn8"
+            tools:layout_editor_absoluteX="125dp" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/Button"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="6"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn9"
+            tools:layout_editor_absoluteX="205dp" />
+
+        <Button
+            android:id="@+id/btnMin"
+            style="@style/CalcButton"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="-"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnMul"
+            tools:layout_editor_absoluteX="285dp" />
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/Button"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="1"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn4"
+            tools:layout_editor_absoluteX="45dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/Button"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="2"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn5"
+            tools:layout_editor_absoluteX="125dp" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/Button"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="3"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn6"
+            tools:layout_editor_absoluteX="205dp" />
+
+        <Button
+            android:id="@+id/btnSum"
+            style="@style/CalcButton"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="+"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnMin"
+            tools:layout_editor_absoluteX="285dp" />
+
+        <Button
+            android:id="@+id/btnHpy"
+            style="@style/Button"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="☾"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn2"
+            tools:layout_editor_absoluteX="125dp" />
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/Button"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="0"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn2"
+            tools:layout_editor_absoluteX="125dp" />
+
+        <Button
+            android:id="@+id/btnDot"
+            style="@style/CalcButton"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="."
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn3"
+            tools:layout_editor_absoluteX="205dp" />
+
+        <Button
+            android:id="@+id/btnEq"
+            style="@style/CalcButton"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:text="="
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnSum"
+            tools:layout_editor_absoluteX="285dp" />
+
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
