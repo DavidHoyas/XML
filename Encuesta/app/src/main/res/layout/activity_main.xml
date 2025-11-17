@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:text="@string/pregunta1"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/rgSatisfaccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbBuena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/op_buena" />
+
+        <RadioButton
+            android:id="@+id/rbRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/op_regular" />
+
+        <RadioButton
+            android:id="@+id/rbMala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/op_mala" />
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/pregunta2"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/cbAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/op_android" />
+
+    <CheckBox
+        android:id="@+id/cbIos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/op_ios" />
+
+    <CheckBox
+        android:id="@+id/cbWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/op_web" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:text="@string/enviar"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progreso"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Encuesta</string>
+    <string name="pregunta1">¿Cómo calificarías nuestro servicio?</string>
+    <string name="op_buena">Buena</string>
+    <string name="op_regular">Regular</string>
+    <string name="op_mala">Mala</string>
+    <string name="pregunta2">¿Qué plataformas utilizas?</string>
+    <string name="op_android">Android</string>
+    <string name="op_ios">iOS</string>
+    <string name="op_web">Web</string>
+    <string name="enviar">Enviar</string>
+    <string name="no_respuesta">Sin respuesta</string>
+    <string name="sin_opcion">Ninguna</string>
+    <string name="resumen_encuesta">Satisfacción: %1$s\nPlataformas: %2$s</string>
+
+</resources>
