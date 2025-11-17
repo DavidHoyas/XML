@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Formulario de registro</string>
+    <string name="nombre">Nombre</string>
+    <string name="email">Correo electrónico</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="recibir_noticias">Recibir noticias</string>
+    <string name="enviar">Enviar</string>
+    <string name="resumen_datos">Nombre: %1$s\nEmail: %2$s\nGénero: %3$s\nNoticias: %4$s</string>
+
+</resources>

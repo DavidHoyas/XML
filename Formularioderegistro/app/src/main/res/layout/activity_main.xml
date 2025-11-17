@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:hint="@string/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="@string/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+
+        <RadioGroup
+            android:id="@+id/rgGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <RadioButton
+                android:id="@+id/rbMasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/masculino"/>
+
+            <RadioButton
+                android:id="@+id/rbFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/femenino"/>
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cbNoticias"
+            android:text="@string/recibir_noticias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:text="@string/enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvResumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</ScrollView>
+
+
