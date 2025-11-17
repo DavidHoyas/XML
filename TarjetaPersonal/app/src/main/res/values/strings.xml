@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tarjeta Personal</string>
+    <string name="mi_nombre">Juan Pérez</string>
+    <string name="mi_profesion">Desarrollador Android</string>
+    <string name="mi_email">juanperez@example.com</string>
+    <string name="mi_foto_desc">Foto de perfil</string>
+</resources>
